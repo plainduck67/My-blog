@@ -130,11 +130,15 @@
 
   <header>
     My Coding Blog,
-    <div id="viewsCounter">Views: ...</div>
+    <div id="viewsCounter">
+      <!-- Free visitor counter embed -->
+      <a href='https://www.free-counters.org/'>free Hit Counter</a> 
+      <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=f1e98a230ec90af7b89d01a057a631998ff08607'></script>
+      <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1381402/t/0"></script>
+    </div>
   </header>
   
-  <h2> The place for coding hot takes and insights from a intermediate coder, I will post projects and code here so don't forget to follow along
-  </h2>
+  <h2>The place for coding hot takes and insights from an intermediate coder, I will post projects and code here so don't forget to follow along</h2>
 
  <section class="blog-section">
   <div class="blog-card">
@@ -150,9 +154,6 @@
       <p>Python is slow, but with Pygame it is possible to make an all-Python game. Should I try making a game?</p>
   </div>
 </section>
-
-      
-  </section>
 
   <div id="customCursor">🍊</div>
 
@@ -172,14 +173,6 @@
         cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(1)`;
       });
     });
-    
-    // Fetch view counter
-    fetch('https://api.countapi.xyz/hit/my-citrus-site/visits')
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('viewsCounter').textContent = `Views: ${data.value}`;
-      });
   </script>
 </body>
 </html>
-
